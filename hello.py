@@ -1,6 +1,16 @@
 def hello_world():
-    pass
+    return ("Hello, World!")
 
+name = str(input("Podaj imię "))
+
+def hello():
+    return ("Hello, " + name + "!")
+
+def print_hello(name):
+    print(hello())
 
 message = hello_world()
+
 print(message)
+
+print_hello(name)
