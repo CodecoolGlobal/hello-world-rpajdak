@@ -1,7 +1,11 @@
+import sys
+name = str(sys.argv)
+
+
 def hello_world():
     return ("Hello, World!")
 
-name = str(input("Podaj imię "))
+# name = str(input("Podaj imię "))
 
 def hello():
     return ("Hello, " + name + "!")
