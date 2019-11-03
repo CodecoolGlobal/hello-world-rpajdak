@@ -1,17 +1,18 @@
 import sys
-name = str(sys.argv)
-
-
+data = sys.argv[1:]
+data = str(data)[1:][:-1]
+name = data
 def hello_world():
     return ("Hello, World!")
 
-# name = str(input("Podaj imię "))
-
-def hello():
-    return ("Hello, " + name + "!")
+def hello(name):
+    if name == None or name == "" :
+        return ("Hello, World!")
+    else:
+        return ("Hello, " + name + "!")
 
 def print_hello(name):
-    print(hello())
+    print(hello(name))
 
 message = hello_world()
 
