@@ -6,7 +6,8 @@ def hello_world():
     return ("Hello, World!")
 
 def hello(name):
-    if name == None or name == "" :
+    # if name == None or name == "" :
+    if not name:
         return ("Hello, World!")
     else:
         return ("Hello, " + name + "!")
